@@ -1,6 +1,6 @@
 // Initialize EmailJS with your Public Key
 (function () {
-    emailjs.init("kvH9XL-le-dX5fy0j"); // Ensure this is your correct public key
+    emailjs.init("SmjJAYHk380vs1NmK"); // Ensure this is your correct public key
 })();
 
 // Form submission handler
@@ -21,7 +21,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         };
 
         // Send email using EmailJS with public key
-        emailjs.send("service_9mergpl", "template_kiv5uda", templateParams, "kvH9XL-le-dX5fy0j")
+        emailjs.send("service_9mergpl", "template_kiv5uda", templateParams, "SmjJAYHk380vs1NmK")
             .then(function (response) {
                 alert(`Thank you, ${name}! Your message has been successfully sent.`);
                 document.getElementById('contactForm').reset(); // Clear form fields
