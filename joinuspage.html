@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Wistech Solutions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1e3c72;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        .navbar .menu ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu ul li {
+            margin: 0 15px;
+        }
+
+        .navbar .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .menu ul li a:hover {
+            color: #ffcc00; /* Change to a different color on hover */
+        }
+
+        /* Join Container */
+        .join-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px 20px; /* Added padding to avoid overlap with navbar */
+        }
+
+        /* Title */
+        .join-title {
+            font-size: 42px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Cards Container */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            width: 90%;
+            max-width: 1200px;
+            height: auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #1e3c72;
+            font-size: 26px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icon {
+            color: #1e3c72;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2a5298; /* Changed footer color */
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .footer-section {
+            width: 22%;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #15325d;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+        }
+
+        footer .social-icons {
+            margin-top: 20px;
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Wistech</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="join-container">
+        <h1 class="join-title">Welcome to Our Careers</h1>
+        <div class="cards-container">
+            <div class="card"> 
+                <h2>Our Culture</h2>
+                <p>We foster innovation, teamwork, and customer excellence.</p>
+            </div>
+            <div class="card"> 
+                <h2>Career Opportunities</h2>
+                <p>Join roles in Sales, Tech Support, IT Services, and Marketing.</p>
+            </div>
+            <div class="card"> 
+                <h2>Benefits and Perks</h2>
+                <p>Great salaries, career growth, work-life balance, and more.</p>
+            </div>
+            <div class="card"> 
+                <h2>Current Openings</h2>
+                <p>Browse our latest job openings and find your perfect fit.</p>
+            </div>
+            <div class="card"> 
+                <h2>How to Apply</h2>
+                <p>Send your resume and cover letter to our careers team.</p>
+            </div>
+            <div class="card"> 
+                <h2>Stay Connected</h2>
+                <p>Follow us on social media for career updates.</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Wistech Solutions is dedicated to delivering high-quality IT services and innovative solutions for businesses and individuals.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: wistechsolutions@gmail.com</p>
+                <p>Phone: +256 701887463</p>
+                <p>Address: Bushenyi, Uganda</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>Subscribe to our newsletter for updates on our latest products and services.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Wistech Solutions | Designed by <strong>Nasasira Wisdom</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from(".join-title", {duration: 1.5, opacity: 0, y: -50, ease: "power2.out"});
+        gsap.from(".card", {duration: 1, opacity: 0, y: 50, stagger: 0.2, ease: "power2.out"});
+    </script>
+</body>
+</html>
